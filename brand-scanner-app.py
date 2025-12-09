@@ -179,9 +179,10 @@ def main():
     "Paste a site URL and the brand terms/placeholders you want to check for. "
     "The tool will scan pages and show where those terms are still present."
     "<br><br>"
-    "<span style='color:red; font-weight:bold; font-size:18px;'>"
+    "<span style='color:red; font-size:16px;'>"
     "Check off 'Also crawl internal links' if you want the tool to search beyond the site map."
-    "</span>",
+    "</span>"
+    "<br><br>",
     unsafe_allow_html=True
     )
 
