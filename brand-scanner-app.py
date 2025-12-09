@@ -178,6 +178,7 @@ def main():
     st.markdown(
         "Paste a site URL and the brand terms/placeholders you want to check for. "
         "The tool will scan pages and show where those terms are still present."
+        "<span style='color:red; font-weight:bold; font-size:18px;'>Check off 'Also crawl internal links' if you want the tool to search beyond the site map.</span>"
     )
 
     # --- Inputs ---
@@ -215,7 +216,7 @@ def main():
             max_value=2000,
             value=200,
             step=10,
-            help="Safety limit to avoid crawling the entire internet by accident.",
+            help="Safety limit to avoid crawling too many pages.",
         )
         crawl_delay = st.slider(
             "Delay between crawl requests (seconds)",
